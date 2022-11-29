@@ -5,16 +5,20 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { EmployeeNavbarComponent } from './shared/employee-navbar/employee-navbar.component';
 import { EmployeesComponent } from './employees/employees.component';
+import {  HttpClientModule } from '@angular/common/http';
+import { CreateEmployeeComponent } from './create-employee/create-employee.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     EmployeeNavbarComponent,
-    EmployeesComponent
+    EmployeesComponent,
+    CreateEmployeeComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
